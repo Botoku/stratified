@@ -1,0 +1,37 @@
+.textAside{
+    color: var(--color-accent-blue)
+}
+
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.nameCont {
+    margin: 0 auto;
+}
+
+.nameCont p{
+    opacity: .7
+}
+.title{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+@media (min-width: 768px){
+    .mainCont{
+        flex-direction: row;
+    }
+
+ 
+    .cocoName{
+        font-size: 14px;
+    }
+}

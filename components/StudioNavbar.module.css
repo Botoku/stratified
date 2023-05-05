@@ -1,0 +1,13 @@
+.backCont {
+    color: var(--color-main-red);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    
+
+}
+
+.backCont i{
+    margin-right: 10px;
+}

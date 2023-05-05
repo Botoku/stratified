@@ -1,0 +1,11 @@
+.logoCont{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logoCont img{
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+:root{
+  --background: rgb(201, 201, 201);
+  --primary1: rgb(26, 25, 25);
+  --color-main-blue: #66bbff;
+  --color-accent-blue: #367bb3;
+  --color-accent-yellow: #f7ff4d;
+
+
+  --color-main-red: #C16A79;
+  --grey-light-1: #979DAC;
+  --grey-light-2: #7D8597;
+  --grey-light-3: #5C677D;
+  --grey-blue-dark-1: #33415C;
+  --blue-1: #001233;
+  --blue-2: #001845;
+  --blue-3: #002855;
+  --blue-4: #023E7D;
+  --blue-5: #0353A4;
+  --blue-6: #0466C8;
+
+  --beige-1: #D5BDAF;
+  --beige-2: #E3D5CA;
+  --beige-3: #F5EBE0;
+  --beige-4: #D6CCC2;
+  --beige-5: #EDEDE9;
+
+  --green-1: #BEE3DB;
+  --green-2: #89B0AE;
+  --green-3: #555B6E;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  color: var(--blue-4);
+  background-color: var(--grey-light-1);
+  width: 100%;
+ 
+}
+/* .dark body{
+  background-color: var(--beige-5) !important;
+} */
+.mainCont{
+  position: relative;
+
+ 
+  /* max-width: 1000px;
+  margin: 0 auto; */
+}
+.left_sidebar{
+  position: fixed;
+  right: 0px;
+  width: 0px;
+  min-height: 100vh;
+  background-color: var(--grey-light-2);
+  border-left: 1px solid var(--blue-6);
+  padding-top: 75px;
+  transition: width .5s, opacity 1s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  z-index: 300;
+}
+.menuActive .left_sidebar{
+  width: 190px;
+  opacity: 1;
+}
+.mainContent_container{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  transition: width .5s;
+}
+.menuActive .mainContent_container{
+  width: calc(100vw - 220px);
+}
+
+
+.welcome_cont{
+  min-height: 100vh;
+}
+
+a:visited, a{
+  color: var(--blue-4);
+}
+
+.sidebarLogo img{
+  border-radius: 50%;
+  width: 50px;
+}
+.lightLogo{
+  display: none;
+}
+
+.sidebar_home_button{
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.sidebar_home_button a{
+  text-decoration: none;
+
+}
+
+@media (max-width: 767px){
+  .menuActive .mainContent_container{
+    width: calc(100vw - 100px);
+  }
+  .menuActive .left_sidebar{
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px){
+  .menuActive .left_sidebar{
+    width: 100vw;
+  }
+  .menuActive .mainContent_container{
+    width: 100vw;
+  }
+}
+
+
+/* background-color: #74EBD5;
+background-image: linear-gradient(90deg, #5fac9e 0%, #9FACE6 100%); */
+

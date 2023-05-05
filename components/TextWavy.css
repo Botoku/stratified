@@ -1,0 +1,49 @@
+.textWavy span{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: animate 1.5s ease-in-out infinite;
+
+
+
+}
+
+.textWavy{
+    position: relative;
+    -webkit-box-reflect: below -6px linear-gradient(transparent, rgba(0,0,0,.8));
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.textWavy .first{
+    animation-delay:.1s ;
+
+}
+.textWavy .second{
+    animation-delay:.2s ;
+}
+.textWavy .third{
+    animation-delay:.3s ;
+}.textWavy .fourth{
+    animation-delay:.4s ;
+}.textWavy .fifth{
+    animation-delay:.5s ;
+}.textWavy .sixth{
+    animation-delay:.6s ;
+}.textWavy .seventh{
+    animation-delay:.7s ;
+}.textWavy .eighth{
+    animation-delay:.8s ;
+}.textWavy .ninth{
+    animation-delay:.9s ;
+}.textWavy .ten{
+    animation-delay:1s ;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
